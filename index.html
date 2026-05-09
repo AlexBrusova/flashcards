@@ -1,28 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Приложение для изучения английских слов"
+    />
+    <meta name="author" content="Александра Брусова" />
     <title>Flashcards</title>
-    <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="Flashcards" />
+    <meta
+      property="og:description"
+      content="Приложение для изучения английских слов"
+    />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <a href="#">Flashcards</a>
       <nav>
-        <a href="#">Карточки</a>
-        <a href="#">Добавить</a>
+        <a href="#" class="nav__link">Карточки</a>
+        <a href="#" class="nav__link">Добавить</a>
       </nav>
     </header>
 
     <main>
       <h1>Мои карточки</h1>
-      <article>
-        <h2>Apple</h2>
-        <p>Яблоко</p>
-      </article>
+      <div class="cards">
+        <article class="card" data-word="apple" data-translation="яблоко">
+          <span class="card__badge">Новое</span>
+          <h2 lang="en">Apple</h2>
+          <p>Яблоко</p>
+        </article>
+        <article class="card" data-word="orange" data-translation="апельсин">
+          <span class="card__badge">Новое</span>
+          <h2 lang="en">Orange</h2>
+          <p>Апельсин</p>
+        </article>
+        <article class="card" data-word="pineapple" data-translation="ананас">
+          <span class="card__badge">Новое</span>
+          <h2 lang="en">Pineapple</h2>
+          <p>Ананас</p>
+        </article>
+      </div>
+      <section class="video-section">
+        <h2>Как пользоваться приложением</h2>
+        <div class="video-wrapper">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/VZNzZAO7v8w?si=giy7OSqTMMXNI21N"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            sandbox="allow-same-origin allow-scripts"
+          >
+          </iframe>
+        </div>
+      </section>
     </main>
-
     <footer>Брусова Александра</footer>
   </body>
 </html>
